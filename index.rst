@@ -23,13 +23,27 @@ Methods being evaluated include:
 
 .. _lsst-cvmfs: https://github.com/airnandez/lsst-cvmfs
 
+Audience
+--------
+
+This is intended to be a living document that will update fairly frequently as
+the needs of the DM user community are identified.  For the moment, the
+intended audience of this document are DM core developers with access to LSST
+project on the NCSA Nebula system.
+
 Currently Available Formats
 ---------------------------
+
+At present, all binary builds are made using `newinstall.sh`_ and ``eups
+distrib install`` mirroring the procedure an end-user would making a from
+source build.
 
 In this note, we describe two formats for pre-built binaries:
 
 * :ref:`nebula-images`
 * :ref:`docker-containers`
+
+.. _newinstall.sh: https://github.com/lsst/lsst/blob/master/scripts/newinstall.sh
 
 Desired Feedback
 ----------------
@@ -40,6 +54,9 @@ Desired Feedback
   Debian/Ubuntu based VM images, containers, packages?
 
 - How do binary products integrate into existing workflows?
+
+- Is there a desire for `lsstsw` based products targeted solely at core
+  DM developers?
 
 
 Vagrant based demonstration
@@ -224,3 +241,4 @@ See Also
 * :doc:`installing-vagrant`
 * :doc:`installing-docker`
 * `vagrant cheat sheet`_
+* `_newinstall.sh`_
